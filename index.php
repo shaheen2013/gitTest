@@ -9,8 +9,8 @@ require_once('Git.php');
     $repo->commit('New commit '.time());
     $repo->push('origin', 'master');
 
-    //    $repo->checkout($branch);
-    //    $repo->push('origin', $branch);
+        $repo->checkout($branch);
+        $repo->push('origin', $branch);
 
     print_r($repo);exit();
 
