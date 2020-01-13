@@ -486,8 +486,8 @@ class GitRepo {
 	 * @return  string
 	 */
 	public function create_branch($branch) {
-//		return $this->run("branch " . escapeshellarg($branch));
-        return $this->run("checkout -b " . escapeshellarg($branch));
+		return $this->run("branch " . escapeshellarg($branch));
+//        return $this->run("checkout -b " . escapeshellarg($branch));
 	}
 
 	/**
